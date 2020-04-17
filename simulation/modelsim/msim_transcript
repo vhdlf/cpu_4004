@@ -1,0 +1,104 @@
+# Reading D:/Program_Files/Intel/modelsim_ase/tcl/vsim/pref.tcl
+# do cpu_4004_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/Program_Files/Intel/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {D:/Documents/cpu_4004/src/sim_pkg.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:07:23 on Apr 17,2020
+# vcom -reportprogress 300 -93 -work work D:/Documents/cpu_4004/src/sim_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Compiling package sim_pkg
+# -- Compiling package body sim_pkg
+# -- Loading package sim_pkg
+# End time: 17:07:24 on Apr 17,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Documents/cpu_4004/src/cpu_4004_pkg.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:07:24 on Apr 17,2020
+# vcom -reportprogress 300 -93 -work work D:/Documents/cpu_4004/src/cpu_4004_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package cpu_4004_pkg
+# End time: 17:07:24 on Apr 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Documents/cpu_4004/src/cpu_4004.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:07:24 on Apr 17,2020
+# vcom -reportprogress 300 -93 -work work D:/Documents/cpu_4004/src/cpu_4004.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package sim_pkg
+# -- Loading package cpu_4004_pkg
+# -- Compiling entity cpu_4004
+# -- Compiling architecture twoproc of cpu_4004
+# End time: 17:07:24 on Apr 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {D:/Documents/cpu_4004/src/cpu_4004_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:07:24 on Apr 17,2020
+# vcom -reportprogress 300 -93 -work work D:/Documents/cpu_4004/src/cpu_4004_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package sim_pkg
+# -- Loading package cpu_4004_pkg
+# -- Compiling entity cpu_4004_tb
+# -- Compiling architecture test of cpu_4004_tb
+# -- Loading entity cpu_4004
+# -- Compiling configuration cpu_4004_tb_test_cfg
+# -- Loading entity cpu_4004_tb
+# -- Loading architecture test of cpu_4004_tb
+# End time: 17:07:24 on Apr 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  cpu_4004_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" cpu_4004_tb 
+# Start time: 17:07:24 on Apr 17,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.sim_pkg(body)
+# Loading work.cpu_4004_pkg
+# Loading work.cpu_4004_tb(test)
+# Loading work.cpu_4004(twoproc)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: open_ok
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_4004_tb
+# ** Failure: Ending simulation. This is not a failure
+#    Time: 25265928 ps  Iteration: 0  Process: /cpu_4004_tb/p_test_seq File: D:/Documents/cpu_4004/src/sim_pkg.vhd
+# Break in Subprogram sim_end at D:/Documents/cpu_4004/src/sim_pkg.vhd line 196
+run
+# ** Note: open_ok
+#    Time: 25265928 ps  Iteration: 0  Instance: /cpu_4004_tb
+run
+# ** Failure: Ending simulation. This is not a failure
+#    Time: 50524312 ps  Iteration: 0  Process: /cpu_4004_tb/p_test_seq File: D:/Documents/cpu_4004/src/sim_pkg.vhd
+# Break in Subprogram sim_end at D:/Documents/cpu_4004/src/sim_pkg.vhd line 196

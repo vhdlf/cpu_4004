@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Standard Edition"
 
--- DATE "04/17/2020 17:04:19"
+-- DATE "04/17/2020 17:07:01"
 
 -- 
 -- Device: Altera EP4CE6E22C8 Package TQFP144
@@ -85,23 +85,23 @@ ENTITY 	cpu_4004 IS
 	\cpu_input.step\ : IN std_logic;
 	\cpu_input.stop\ : IN std_logic;
 	\cpu_input.run\ : IN std_logic;
-	\cpu_output.reg_is\ : OUT std_logic_vector(3 DOWNTO 0);
-	\cpu_output.reg_ip\ : OUT std_logic_vector(3 DOWNTO 0);
-	\cpu_output.reg_r1\ : OUT std_logic_vector(3 DOWNTO 0);
-	\cpu_output.reg_r0\ : OUT std_logic_vector(3 DOWNTO 0);
-	\cpu_output.mem_rd\ : OUT std_logic;
-	\cpu_output.mem_wr\ : OUT std_logic;
-	\cpu_output.mem_addr\ : OUT std_logic_vector(3 DOWNTO 0);
-	\cpu_output.mem_wdata\ : OUT std_logic_vector(3 DOWNTO 0);
-	\cpu_output.led_exec\ : OUT std_logic;
-	\cpu_output.led_dec\ : OUT std_logic;
-	\cpu_output.led_fetch\ : OUT std_logic;
-	\cpu_output.digit_latch\ : OUT std_logic;
-	\cpu_output.digit_value\ : OUT std_logic_vector(3 DOWNTO 0);
-	\cpu_output.beep\ : OUT std_logic;
-	\cpu_output.halted\ : OUT std_logic;
-	\cpu_output.paused\ : OUT std_logic;
-	\cpu_output.running\ : OUT std_logic
+	\cpu_output.reg_is\ : BUFFER std_logic_vector(3 DOWNTO 0);
+	\cpu_output.reg_ip\ : BUFFER std_logic_vector(3 DOWNTO 0);
+	\cpu_output.reg_r1\ : BUFFER std_logic_vector(3 DOWNTO 0);
+	\cpu_output.reg_r0\ : BUFFER std_logic_vector(3 DOWNTO 0);
+	\cpu_output.mem_rd\ : BUFFER std_logic;
+	\cpu_output.mem_wr\ : BUFFER std_logic;
+	\cpu_output.mem_addr\ : BUFFER std_logic_vector(3 DOWNTO 0);
+	\cpu_output.mem_wdata\ : BUFFER std_logic_vector(3 DOWNTO 0);
+	\cpu_output.led_exec\ : BUFFER std_logic;
+	\cpu_output.led_dec\ : BUFFER std_logic;
+	\cpu_output.led_fetch\ : BUFFER std_logic;
+	\cpu_output.digit_latch\ : BUFFER std_logic;
+	\cpu_output.digit_value\ : BUFFER std_logic_vector(3 DOWNTO 0);
+	\cpu_output.beep\ : BUFFER std_logic;
+	\cpu_output.halted\ : BUFFER std_logic;
+	\cpu_output.paused\ : BUFFER std_logic;
+	\cpu_output.running\ : BUFFER std_logic
 	);
 END cpu_4004;
 
